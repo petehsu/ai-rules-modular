@@ -2,6 +2,8 @@
 
 [🇨🇳 中文说明](README_CN.md) | [🇺🇸 English](README.md)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A comprehensive, modular set of rules designed to guide AI coding assistants (Cursor, Windsurf, Copilot, Trae) in generating production-ready code.
 
 ## 📖 Overview

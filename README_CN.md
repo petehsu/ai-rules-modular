@@ -2,6 +2,8 @@
 
 [🇺🇸 English](README.md) | [🇨🇳 中文说明](README_CN.md)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 一套全面、模块化的规则集，旨在指导 AI 编码助手（Cursor, Windsurf, Copilot, Trae）生成生产级代码。概述
 
 ## 📖 概述
