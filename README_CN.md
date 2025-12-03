@@ -103,14 +103,14 @@ Modular_Rules/
 2. 粘贴组合后的规则内容。
 3. 或者在 设置 -> Rules -> `user_rules.md` 中配置全局个人偏好。
 
-### 4. Google Antigravity (New)
-**工作区规则（项目级）：**
-1. 在项目根目录创建 `agents/.rules/` 文件夹。
-2. 添加 Markdown 文件（如 `code_style.md`, `architecture.md`）。
-3. **注意：** 支持 "Always on"（常驻）或 "Model decision"（模型决定）激活模式。
+### 4. Google Project IDX
+**工作区配置：**
+1. 通过 `.idx/dev.nix` 文件管理（基于 Nix 的配置）。
+2. 定义系统包、插件和预览设置。
+3. **注意：** 使用 Gemini 提供 AI 辅助。
 
-**全局规则（用户级）：**
-- 定义在用户主目录（通常是 `~/.antigravity/global_rules.md`）。
+**全局规则：**
+- 在 IDX 环境的用户设置中配置。
 
 ### 5. GitHub Copilot
 1. 创建 `.github/copilot-instructions.md`。
@@ -128,7 +128,7 @@ Modular_Rules/
 | **Cursor** | [Cursor Rules 文档](https://docs.cursor.com/context/rules-for-ai) |
 | **Windsurf** | [Windsurf Cascade Rules](https://docs.codeium.com/windsurf/cascade#rules) |
 | **Trae** | [Trae Rules 指南](https://docs.trae.ai/guide/rules) |
-| **Antigravity** | [Google Antigravity 文档](https://developers.google.com/antigravity) |
+| **Antigravity** | [Google Project IDX 文档](https://developers.google.com/idx/) |
 | **Copilot** | [GitHub Copilot 自定义指令](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) |
 
 ## 📋 文件说明

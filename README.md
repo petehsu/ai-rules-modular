@@ -103,14 +103,14 @@ Feed the appropriate combination of files based on the project type:
 2. Paste the combined rules content there.
 3. Or use **Global Rules** in Settings -> Rules -> `user_rules.md` for personal preferences.
 
-### 4. Google Antigravity (New)
-**Workspace Rules (Project-Specific):**
-1. Create `agents/.rules/` directory in your project.
-2. Add markdown files (e.g., `code_style.md`, `architecture.md`).
-3. **Note:** Supports "Always on" or "Model decision" activation modes.
+### 4. Google Project IDX
+**Workspace Configuration:**
+1. Managed via `.idx/dev.nix` file (Nix-based configuration).
+2. Define system packages, extensions, and previews.
+3. **Note:** Uses Gemini for AI assistance.
 
-**Global Rules (User-Specific):**
-- Defined in user home directory (typically `~/.antigravity/global_rules.md`).
+**Global Rules:**
+- Configured via user settings in the IDX environment.
 
 ### 5. GitHub Copilot
 1. Create `.github/copilot-instructions.md`.
@@ -128,7 +128,7 @@ Feed the appropriate combination of files based on the project type:
 | **Cursor** | [Cursor Rules Documentation](https://docs.cursor.com/context/rules-for-ai) |
 | **Windsurf** | [Windsurf Cascade Rules](https://docs.codeium.com/windsurf/cascade#rules) |
 | **Trae** | [Trae Rules Guide](https://docs.trae.ai/guide/rules) |
-| **Antigravity** | [Google Antigravity Docs](https://developers.google.com/antigravity) |
+| **Antigravity** | [Google Project IDX Docs](https://developers.google.com/idx/) |
 | **Copilot** | [GitHub Copilot Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) |
 
 ## 📋 File Descriptions
