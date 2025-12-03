@@ -103,14 +103,33 @@ Modular_Rules/
 2. 粘贴组合后的规则内容。
 3. 或者在 设置 -> Rules -> `user_rules.md` 中配置全局个人偏好。
 
-### 4. GitHub Copilot
+### 4. Google Antigravity (New)
+**工作区规则（项目级）：**
+1. 在项目根目录创建 `agents/.rules/` 文件夹。
+2. 添加 Markdown 文件（如 `code_style.md`, `architecture.md`）。
+3. **注意：** 支持 "Always on"（常驻）或 "Model decision"（模型决定）激活模式。
+
+**全局规则（用户级）：**
+- 定义在用户主目录（通常是 `~/.antigravity/global_rules.md`）。
+
+### 5. GitHub Copilot
 1. 创建 `.github/copilot-instructions.md`。
 2. 粘贴组合后的规则内容。
 3. Copilot 会在对话时自动读取此上下文。
 
-### 5. 通用 VS Code 插件
+### 6. 通用 VS Code 插件
 - 在 AI 插件（如 Cody, Codeium）的 "Custom Instructions" 设置中粘贴。
 - 或者保持 `AI_RULES.md` 打开，并告诉 AI："Read AI_RULES.md first."
+
+## 🔗 官方文档链接
+
+| IDE | 配置指南 |
+|:----|:---------|
+| **Cursor** | [Cursor Rules 文档](https://docs.cursor.com/context/rules-for-ai) |
+| **Windsurf** | [Windsurf Cascade Rules](https://docs.codeium.com/windsurf/cascade#rules) |
+| **Trae** | [Trae Rules 指南](https://docs.trae.ai/guide/rules) |
+| **Antigravity** | [Google Antigravity 文档](https://developers.google.com/antigravity) |
+| **Copilot** | [GitHub Copilot 自定义指令](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) |
 
 ## 📋 文件说明
 

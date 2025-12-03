@@ -103,14 +103,33 @@ Feed the appropriate combination of files based on the project type:
 2. Paste the combined rules content there.
 3. Or use **Global Rules** in Settings -> Rules -> `user_rules.md` for personal preferences.
 
-### 4. GitHub Copilot
+### 4. Google Antigravity (New)
+**Workspace Rules (Project-Specific):**
+1. Create `agents/.rules/` directory in your project.
+2. Add markdown files (e.g., `code_style.md`, `architecture.md`).
+3. **Note:** Supports "Always on" or "Model decision" activation modes.
+
+**Global Rules (User-Specific):**
+- Defined in user home directory (typically `~/.antigravity/global_rules.md`).
+
+### 5. GitHub Copilot
 1. Create `.github/copilot-instructions.md`.
 2. Paste the combined rules content.
 3. Copilot will automatically use this context for all chats.
 
-### 5. VS Code (Generic)
+### 6. VS Code (Generic)
 - Use "Custom Instructions" in your AI extension settings (e.g., Cody, Codeium).
 - Or keep a `AI_RULES.md` open and tell the AI: "Read AI_RULES.md first."
+
+## 🔗 Official Documentation
+
+| IDE | Configuration Guide |
+|:----|:--------------------|
+| **Cursor** | [Cursor Rules Documentation](https://docs.cursor.com/context/rules-for-ai) |
+| **Windsurf** | [Windsurf Cascade Rules](https://docs.codeium.com/windsurf/cascade#rules) |
+| **Trae** | [Trae Rules Guide](https://docs.trae.ai/guide/rules) |
+| **Antigravity** | [Google Antigravity Docs](https://developers.google.com/antigravity) |
+| **Copilot** | [GitHub Copilot Custom Instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot) |
 
 ## 📋 File Descriptions
 
