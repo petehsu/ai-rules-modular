@@ -1,6 +1,8 @@
-# AI Rules - Modular Code Quality Guidelines for AI-Assisted Development
+# AI Rules - Modular Code Quality Guidelines
 
-A comprehensive, modular set of rules designed to guide AI coding assistants (like GitHub Copilot, Claude, ChatGPT) in generating production-ready, maintainable, and secure code.
+[🇨🇳 中文说明](README_CN.md) | [🇺🇸 English](README.md)
+
+A comprehensive, modular set of rules designed to guide AI coding assistants (Cursor, Windsurf, Copilot, Trae) in generating production-ready code.
 
 ## 📖 Overview
 
@@ -77,9 +79,36 @@ Feed the appropriate combination of files based on the project type:
 ```
 **Total context:** 302 + 166 + 43 + 89 + 40 = **640 lines**
 
-### For Developers
+## ⚙️ IDE Configuration Guide
 
-Simply copy the relevant markdown files into your AI assistant's context window, or reference them in your custom instructions.
+### 1. Cursor
+**Method A: Project Rules (Recommended)**
+1. Create `.cursor/rules/` directory in your project root.
+2. Copy relevant `.md` files into this folder (rename to `.mdc` for better context).
+3. **Tip:** Create a `master.mdc` that imports others if supported, or just keep them separate.
+
+**Method B: `.cursorrules` (Simple)**
+1. Create `.cursorrules` file in project root.
+2. Copy the content of `00_Core_Protocol.md` + your stack-specific rules into it.
+
+### 2. Windsurf (Cascade)
+1. Create `.windsurfrules` file in project root.
+2. Copy the content of selected rule files into it.
+3. **Note:** Windsurf supports natural language, so you can paste the raw markdown.
+
+### 3. Trae IDE
+1. Create `.trae/rules/project_rules.md`.
+2. Paste the combined rules content there.
+3. Or use **Global Rules** in Settings -> Rules -> `user_rules.md` for personal preferences.
+
+### 4. GitHub Copilot
+1. Create `.github/copilot-instructions.md`.
+2. Paste the combined rules content.
+3. Copilot will automatically use this context for all chats.
+
+### 5. VS Code (Generic)
+- Use "Custom Instructions" in your AI extension settings (e.g., Cody, Codeium).
+- Or keep a `AI_RULES.md` open and tell the AI: "Read AI_RULES.md first."
 
 ## 📋 File Descriptions
 
